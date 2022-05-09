@@ -55,6 +55,13 @@ function myFunction(a, b) {
 
 //  11
 function myFunction(a, b, c, d, e, f) {
-   
-    return Math.pow(((((a+b)-c)*d)/e),f)
+    return Math.pow((a+b-c)*d/e,f)
+ }
+
+//  12
+function myFunction(a) {
+    if (a%2 == 0)
+    return true;
+    else
+    return false;
  }
