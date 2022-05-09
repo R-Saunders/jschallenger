@@ -26,3 +26,9 @@ function myFunction(a,n) {
 function myFunction(a) {
     return a.slice(3);
  }
+
+//  6.
+function myFunction(str) {
+    return str.substr(-3, 3);
+}
+
