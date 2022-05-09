@@ -52,3 +52,9 @@ function myFunction(a) {
 function myFunction(a, b) {
     return (a*(b/100));
  }
+
+//  11
+function myFunction(a, b, c, d, e, f) {
+   
+    return Math.pow(((((a+b)-c)*d)/e),f)
+ }
