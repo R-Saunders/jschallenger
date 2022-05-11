@@ -70,3 +70,16 @@ function myFunction(a) {
 function myFunction(a,b) {
     return b.split('').reduce(0, (prev, current) => current === a ? prev+1 : prev);
 }
+
+// 14
+function myFunction(a) {
+    if (a%1 == 0 )
+    return true;
+    else return false;
+}
+
+// 15
+function myFunction(a, b) {
+if (a<b) return a/b;
+else return a*b; 
+}
