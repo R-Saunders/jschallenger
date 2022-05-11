@@ -65,3 +65,8 @@ function myFunction(a) {
     else
     return false;
  }
+
+//  13.
+function myFunction(a,b) {
+    return b.split('').reduce(0, (prev, current) => current === a ? prev+1 : prev);
+}
