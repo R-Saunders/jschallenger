@@ -83,3 +83,17 @@ function myFunction(a, b) {
 if (a<b) return a/b;
 else return a*b; 
 }
+
+// 16
+function myFunction(a, b) {
+    if (a.includes(b)) {
+    result = b.concat(a);
+    } else {
+    result = a.concat(b);
+    } return result;
+ }
+
+//  17
+function myFunction(a) {
+    return Math.round(a * 100) / 100;
+ }
