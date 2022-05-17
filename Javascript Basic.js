@@ -97,3 +97,8 @@ function myFunction(a, b) {
 function myFunction(a) {
     return Math.round(a * 100) / 100;
  }
+
+//  18
+function myFunction(a) {
+    return Array.from(a.toString()).map(Number); 
+ }
