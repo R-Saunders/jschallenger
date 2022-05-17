@@ -102,3 +102,8 @@ function myFunction(a) {
 function myFunction(a) {
     return Array.from(a.toString()).map(Number); 
  }
+
+//  19
+function myFunction(a, b) {
+    return (a.charAt(0).toUpperCase() + a.slice(1)+b.split("").reverse().join("")).replace('%','');
+ }
