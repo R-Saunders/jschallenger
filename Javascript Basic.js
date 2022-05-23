@@ -68,7 +68,7 @@ function myFunction(a) {
 
 //  13.
 function myFunction(a,b) {
-    return b.split('').reduce(0, (prev, current) => current === a ? prev+1 : prev);
+    return b.split('').reduce((prev, current) => current === a ? prev+1 : prev,0);
 }
 
 // 14
@@ -106,4 +106,38 @@ function myFunction(a) {
 //  19
 function myFunction(a, b) {
     return (a.charAt(0).toUpperCase() + a.slice(1)+b.split("").reverse().join("")).replace('%','');
+ }
+
+//  20
+function myFunction(a) {
+    function isPrime(a) {
+        if (a <= 1) return false;
+        if (a <= 3) return true;
+        if (a%2 == 0 || a%3 == 0) return false;
+        
+        for (let i=5; i*i<=a; i=i+6)
+            if (a%i == 0 || a%(i+2) == 0)
+            return false;
+            return true;
+    }
+    function nextPrime(N) {
+         if (N <= 1)
+            return 2;
+     
+        let prime = N;
+        let found = false;
+     
+        while (!found) {
+            prime++;
+     
+            if (isPrime(prime))
+                found = true;
+        }
+         return prime;
+    }
+    if (isPrime(a) == true) {
+    return a;
+    } else {
+    return nextPrime(a);
+    }
  }
